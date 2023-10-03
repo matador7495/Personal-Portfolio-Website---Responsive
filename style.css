@@ -325,3 +325,234 @@ span{
     color: #fff;
     transition: 0.4s;
 }
+/* contact */
+.contact-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+.con-box{
+    padding: 40px 25px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+}
+.icon i{
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 25%);
+}
+.icon i:hover{
+    color: #fff;
+    background-color: var(--text-color);
+    transition: 0.4s;
+}
+.con-box h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.con-box h5,.con-box h6{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+/* bottom */
+.bottom{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.bottom p{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+/* responsive */
+@media (max-width:1500px){
+    header{
+        padding: 15px 42px;
+    }
+    :root{
+        --big-font: 3rem;
+        --h2-font: 2rem;
+    }
+    .cta{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 25px;
+    }
+    .cta-text h2{
+        margin-bottom: 10px;
+    }
+    .cta-text p{
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width:1340px) {
+    section{
+        padding: 50px 5%;
+    }    
+}
+@media (max-width:1060px) {
+    #menu-icon{
+        display: block;
+    }
+    header .navlist{
+        position: absolute;
+        top: -400px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        transition: 0.4s;
+    }
+    header .navlist.active{
+        top: 86px;
+    }
+    .navlist a{
+        display: block;
+        padding: 1.6rem;
+    }
+}
+@media (max-width: 950px){
+    .home{
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 80px;
+    }
+    .home-text p{
+        width: 100%;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-image{
+        order: 2;
+    }
+}
+@media (max-width: 1700px){
+    .box-one{
+        background-size: 550px ;
+    }
+    .box-one:hover{
+       
+        background-size: 700px ;
+    }
+    .box-two{
+        background-size: 550px ;
+    }
+    .box-two:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-three{
+        background-size: 550px ;
+    }
+    .box-three:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-four{
+
+        background-size: 550px ;
+    }
+    .box-four:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-five{
+
+        background-size: 550px ;
+    }
+    .box-five:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-six{
+
+        background-size: 550px ;
+    }
+    .box-six:hover{
+
+        background-size: 700px ;
+    }
+
+}
+@media (max-width: 1120px){
+    .box-one{
+        background-size: 850px ;
+    }
+    .box-one:hover{
+       
+        background-size: 700px ;
+    }
+    .box-two{
+        background-size: 850px ;
+    }
+    .box-two:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-three{
+        background-size: 850px ;
+    }
+    .box-three:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-four{
+
+        background-size: 850px ;
+    }
+    .box-four:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-five{
+
+        background-size: 850px ;
+    }
+    .box-five:hover{
+
+        background-size: 700px ;
+    }
+    
+    .box-six{
+
+        background-size: 850px ;
+    }
+    .box-six:hover{
+
+        background-size: 700px ;
+    }
+
+}

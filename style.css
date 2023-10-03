@@ -186,5 +186,109 @@ span{
     transform: scale(1.1);
     border-bottom: 2px solid var(--main-color);
     transition: .4s;
+}
+/* portfolio */
+.portfolio{
+    padding-top: 100px;
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.box{
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    transition: all 0.8s;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+    position: relative;
+}
+.box-one{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work1.jpg) center center no-repeat;
+    background-size: 500px ;
+}
+.box-one:hover{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work1.jpg) left center no-repeat;
+    background-size: 600px ;
+}
+.box-two{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work2.jpg) center center no-repeat;
+    background-size: 500px ;
+}
+.box-two:hover{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work2.jpg) left center no-repeat;
+    background-size: 600px ;
+}
 
+.box-three{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work3.jpg) center center no-repeat;
+    background-size: 500px ;
+}
+.box-three:hover{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work3.jpg) left center no-repeat;
+    background-size: 600px ;
+}
+
+.box-four{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work4.jpg) center center no-repeat;
+    background-size: 500px ;
+}
+.box-four:hover{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work4.jpg) left center no-repeat;
+    background-size: 600px ;
+}
+
+.box-five{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work5.jpg) center center no-repeat;
+    background-size: 500px ;
+}
+.box-five:hover{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work5.jpg) left center no-repeat;
+    background-size: 600px ;
+}
+
+.box-six{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work6.jpg) center center no-repeat;
+    background-size: 500px ;
+}
+.box-six:hover{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work6.jpg) left center no-repeat;
+    background-size: 600px ;
+}
+.inner{
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+}
+.inner h6{
+    color: #c6c9d8;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.inner h3{
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.inner button{
+   background-color: var(--main-color); 
+   color: #fff;
+   border: 2px solid var(--main-color);
+   padding: 7px 22px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.inner button:hover{
+    background-color: transparent;
+    border: 2px solid #c6c9d8;
+    transition: 0.4s;
 }

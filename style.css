@@ -141,3 +141,50 @@ span{
     line-height: 1.7;
     margin-bottom: 20px;
 }
+/* services */
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: var(--h2-font);
+}
+.services{
+    padding-top: 100px;
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.row{
+    padding: 60px 45px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+}
+.row i{
+    font-size: 3.2rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.row h3{
+    margin-bottom: 19px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.row p{
+    color: #717173;
+    font-size: 18px;
+    line-height: 30px;
+}
+.row:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid var(--main-color);
+    transition: .4s;
+
+}

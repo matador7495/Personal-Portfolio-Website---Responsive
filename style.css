@@ -292,3 +292,36 @@ span{
     border: 2px solid #c6c9d8;
     transition: 0.4s;
 }
+/* CTA */
+.cta{
+    background-color: var(--main-color);
+    width: 66.6%;
+    margin: 100px auto;
+    padding: 70px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-image: url(imgg/intro.png);
+    background-size: cover;
+    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+}
+.cta h2{
+    color: #fff;
+    font-size: var(--h2-font);
+    margin-bottom: 25px;
+}
+.cta-text p{
+    color: #fff;
+}
+.cta-btn{
+    background-color: #fff;
+    color: var(--main-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+.cta-btn:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: 0.4s;
+}

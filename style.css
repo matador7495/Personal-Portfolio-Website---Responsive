@@ -6,21 +6,23 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+}
 
+:root {
+    --main-color: #f25341;
+    --text-color: #35404e;
+    --bg-color: #f9f9ff;
+    --big-font: 3.6rem;
+    --h2-font: 2.26rem;
+    --p-font: 1.1rem;
 }
-:root{
-    --main-color:#f25341;
-    --text-color:#35404e;
-    --bg-color:#f9f9ff;
-    --big-font:3.6rem;
-    --h2-font:2.26rem;
-    --p-font:1.1rem;
-}
-body{
+
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,19 +33,20 @@ header{
     justify-content: space-between;
     background: var(--bg-color);
     padding: 20px 320px;
-    box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
-.logo{
+
+.logo {
     color: var(--main-color);
     font-size: 2.2rem;
     font-weight: 600;
-
 }
-.navlist{
+
+.navlist {
     display: flex;
-
 }
-.navlist a{
+
+.navlist a {
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
@@ -51,43 +54,51 @@ header{
     transition: color 0.4s;
     text-transform: capitalize;
 }
-.navlist a:hover{
-    color: var(--main-color);   
+
+.navlist a:hover {
+    color: var(--main-color);
 }
-#menu-icon{
+
+#menu-icon {
     font-size: 2rem;
     cursor: pointer;
     display: none;
 }
-section{
+
+section {
     padding: 75px 16.7%;
 }
-.home{
+
+.home {
     width: 100%;
     min-height: 95vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
     align-items: center;
 }
-.home-img img{
+
+.home-img img {
     max-width: 100%;
     width: 530px;
     height: auto;
 }
-.home-text h5{
+
+.home-text h5 {
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 15px;
     color: var(--main-color);
 }
-.home-text h1{
+
+.home-text h1 {
     font-size: var(--big-font);
     color: var(--text-color);
     line-height: 1.4;
     margin-bottom: 25px;
 }
-.home-text p{
+
+.home-text p {
     max-width: 100%;
     width: 430px;
     font-size: var(--p-font);
@@ -95,205 +106,239 @@ section{
     line-height: 1.8;
     margin-bottom: 20px;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 10px 30px;
     color: #fff;
     background: var(--main-color);
     border-radius: 5rem;
 }
-.btn i{
+
+.btn i {
     margin-right: 10px;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.2);
     background-color: #f37465;
     transition: 0.4s;
     box-shadow: 0 5px 15px 2px rgb(63 44 44 / 18%);
 }
+
 /* about */
-.about{
+.about {
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-gap: 5rem;
     align-items: center;
     padding-top: 100px;
 }
-.about-image img{
+
+.about-image img {
     max-width: 100%;
     width: 550px;
     height: auto;
 }
-span{
+
+span {
     font-size: 1rem;
     font-weight: 600;
     color: var(--main-color);
     margin-bottom: 15px;
 }
-.about-text h2{
+
+.about-text h2 {
     font-size: var(--h2-font);
     color: var(--text-color);
     margin-bottom: 15px;
 }
-.about-text p{
+
+.about-text p {
     color: #717173;
     font-size: var(--p-font);
     line-height: 1.7;
     margin-bottom: 20px;
 }
+
 /* services */
-.heading{
+.heading {
     text-align: center;
 }
-.heading h2{
+
+.heading h2 {
     font-size: var(--h2-font);
 }
-.services{
+
+.services {
     padding-top: 100px;
 }
-.services-content{
+
+.services-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4rem;
 }
-.row{
+
+.row {
     padding: 60px 45px;
     background-color: #fff;
     border-radius: 10px;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.04)0px 3px 5px;
 }
-.row i{
+
+.row i {
     font-size: 3.2rem;
     color: var(--main-color);
     margin-bottom: 20px;
 }
-.row h3{
+
+.row h3 {
     margin-bottom: 19px;
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-color);
 }
-.row p{
+
+.row p {
     color: #717173;
     font-size: 18px;
     line-height: 30px;
 }
-.row:hover{
+
+.row:hover {
     transform: scale(1.1);
     border-bottom: 2px solid var(--main-color);
     transition: .4s;
 }
+
 /* portfolio */
-.portfolio{
+.portfolio {
     padding-top: 100px;
 }
-.portfolio-content{
+
+.portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4rem;
 }
-.box{
+
+.box {
     height: 500px;
     width: auto;
     border-radius: 10px;
     transition: all 0.8s;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.04)0px 3px 5px;
     position: relative;
 }
-.box-one{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work1.jpg) center center no-repeat;
-    background-size: 500px ;
-}
-.box-one:hover{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work1.jpg) left center no-repeat;
-    background-size: 600px ;
-}
-.box-two{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work2.jpg) center center no-repeat;
-    background-size: 500px ;
-}
-.box-two:hover{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work2.jpg) left center no-repeat;
-    background-size: 600px ;
+
+.box-one {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imgg/work1.jpg) center center no-repeat;
+    background-size: 500px;
 }
 
-.box-three{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work3.jpg) center center no-repeat;
-    background-size: 500px ;
-}
-.box-three:hover{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work3.jpg) left center no-repeat;
-    background-size: 600px ;
+.box-one:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgg/work1.jpg) left center no-repeat;
+    background-size: 600px;
 }
 
-.box-four{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work4.jpg) center center no-repeat;
-    background-size: 500px ;
-}
-.box-four:hover{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work4.jpg) left center no-repeat;
-    background-size: 600px ;
+.box-two {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imgg/work2.jpg) center center no-repeat;
+    background-size: 500px;
 }
 
-.box-five{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work5.jpg) center center no-repeat;
-    background-size: 500px ;
-}
-.box-five:hover{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work5.jpg) left center no-repeat;
-    background-size: 600px ;
+.box-two:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgg/work2.jpg) left center no-repeat;
+    background-size: 600px;
 }
 
-.box-six{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(imgg/work6.jpg) center center no-repeat;
-    background-size: 500px ;
+.box-three {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imgg/work3.jpg) center center no-repeat;
+    background-size: 500px;
 }
-.box-six:hover{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgg/work6.jpg) left center no-repeat;
-    background-size: 600px ;
+
+.box-three:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgg/work3.jpg) left center no-repeat;
+    background-size: 600px;
 }
-.inner{
+
+.box-four {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imgg/work4.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-four:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgg/work4.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.box-five {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imgg/work5.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-five:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgg/work5.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.box-six {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imgg/work6.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-six:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgg/work6.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.inner {
     position: absolute;
     bottom: 45px;
     left: 35px;
 }
-.inner h6{
+
+.inner h6 {
     color: #c6c9d8;
     font-size: 1rem;
     line-height: 1.7;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.inner h3{
+
+.inner h3 {
     color: #fff;
     font-size: 1.7rem;
     line-height: 1.6;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.inner button{
-   background-color: var(--main-color); 
-   color: #fff;
-   border: 2px solid var(--main-color);
-   padding: 7px 22px;
-   border-radius: 5px;
-   cursor: pointer;
+
+.inner button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: 2px solid var(--main-color);
+    padding: 7px 22px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.inner button:hover{
+
+.inner button:hover {
     background-color: transparent;
     border: 2px solid #c6c9d8;
     transition: 0.4s;
 }
+
 /* CTA */
-.cta{
+.cta {
     background-color: var(--main-color);
     width: 66.6%;
     margin: 100px auto;
@@ -304,45 +349,52 @@ span{
     border-radius: 10px;
     background-image: url(imgg/intro.png);
     background-size: cover;
-    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.04)0px 3px 5px;
 }
-.cta h2{
+
+.cta h2 {
     color: #fff;
     font-size: var(--h2-font);
     margin-bottom: 25px;
 }
-.cta-text p{
+
+.cta-text p {
     color: #fff;
 }
-.cta-btn{
+
+.cta-btn {
     background-color: #fff;
     color: var(--main-color);
     padding: 12px 30px;
     border-radius: 30px;
 }
-.cta-btn:hover{
+
+.cta-btn:hover {
     background-color: var(--main-color);
     color: #fff;
     transition: 0.4s;
 }
+
 /* contact */
-.contact-content{
+.contact-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
     margin-top: 4rem;
 }
-.con-box{
+
+.con-box {
     padding: 40px 25px;
     border-radius: 10px;
     background-color: #fff;
     cursor: pointer;
     border-bottom: 2px solid transparent;
-    box-shadow: rgba(0,0,0,0.04)0px 3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.04)0px 3px 5px;
 }
-.icon i{
+
+.icon i {
     height: 50px;
     width: 50px;
     background-color: var(--main-color);
@@ -355,68 +407,81 @@ span{
     margin-bottom: 15px;
     box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 25%);
 }
-.icon i:hover{
+
+.icon i:hover {
     color: #fff;
     background-color: var(--text-color);
     transition: 0.4s;
 }
-.con-box h3{
+
+.con-box h3 {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 15px;
     color: var(--text-color);
 }
-.con-box h5,.con-box h6{
+
+.con-box h5,
+.con-box h6 {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 5px;
     color: var(--text-color);
 }
+
 /* bottom */
-.bottom{
+.bottom {
     text-align: center;
     width: 100%;
     padding: 20px 0;
 }
-.bottom p{
+
+.bottom p {
     color: var(--text-color);
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 2px;
 }
+
 /* responsive */
-@media (max-width:1500px){
-    header{
+@media (max-width:1500px) {
+    header {
         padding: 15px 42px;
     }
-    :root{
+
+    :root {
         --big-font: 3rem;
         --h2-font: 2rem;
     }
-    .cta{
+
+    .cta {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 60px 25px;
     }
-    .cta-text h2{
+
+    .cta-text h2 {
         margin-bottom: 10px;
     }
-    .cta-text p{
+
+    .cta-text p {
         margin-bottom: 30px;
     }
+}
 
-}
 @media (max-width:1340px) {
-    section{
+    section {
         padding: 50px 5%;
-    }    
+    }
 }
+
 @media (max-width:1060px) {
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
-    header .navlist{
+
+    header .navlist {
         position: absolute;
         top: -400px;
         right: 0;
@@ -427,132 +492,134 @@ span{
         background-color: #fff;
         transition: 0.4s;
     }
-    header .navlist.active{
+
+    header .navlist.active {
         top: 86px;
     }
-    .navlist a{
+
+    .navlist a {
         display: block;
         padding: 1.6rem;
     }
 }
-@media (max-width: 950px){
-    .home{
+
+@media (max-width: 950px) {
+    .home {
         grid-template-columns: 1fr;
         text-align: center;
         margin-top: 80px;
     }
-    .home-text p{
+
+    .home-text p {
         width: 100%;
     }
-    .about{
+
+    .about {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .about-image{
+
+    .about-image {
         order: 2;
     }
 }
-@media (max-width: 1700px){
-    .box-one{
-        background-size: 550px ;
-    }
-    .box-one:hover{
-       
-        background-size: 700px ;
-    }
-    .box-two{
-        background-size: 550px ;
-    }
-    .box-two:hover{
 
-        background-size: 700px ;
-    }
-    
-    .box-three{
-        background-size: 550px ;
-    }
-    .box-three:hover{
-
-        background-size: 700px ;
-    }
-    
-    .box-four{
-
-        background-size: 550px ;
-    }
-    .box-four:hover{
-
-        background-size: 700px ;
-    }
-    
-    .box-five{
-
-        background-size: 550px ;
-    }
-    .box-five:hover{
-
-        background-size: 700px ;
-    }
-    
-    .box-six{
-
-        background-size: 550px ;
-    }
-    .box-six:hover{
-
-        background-size: 700px ;
+@media (max-width: 1700px) {
+    .box-one {
+        background-size: 550px;
     }
 
+    .box-one:hover {
+        background-size: 700px;
+    }
+
+    .box-two {
+        background-size: 550px;
+    }
+
+    .box-two:hover {
+        background-size: 700px;
+    }
+
+    .box-three {
+        background-size: 550px;
+    }
+
+    .box-three:hover {
+        background-size: 700px;
+    }
+
+    .box-four {
+        background-size: 550px;
+    }
+
+    .box-four:hover {
+        background-size: 700px;
+    }
+
+    .box-five {
+        background-size: 550px;
+    }
+
+    .box-five:hover {
+        background-size: 700px;
+    }
+
+    .box-six {
+        background-size: 550px;
+    }
+
+    .box-six:hover {
+        background-size: 700px;
+    }
 }
-@media (max-width: 1120px){
-    .box-one{
-        background-size: 850px ;
-    }
-    .box-one:hover{
-       
-        background-size: 700px ;
-    }
-    .box-two{
-        background-size: 850px ;
-    }
-    .box-two:hover{
 
-        background-size: 700px ;
-    }
-    
-    .box-three{
-        background-size: 850px ;
-    }
-    .box-three:hover{
-
-        background-size: 700px ;
-    }
-    
-    .box-four{
-
-        background-size: 850px ;
-    }
-    .box-four:hover{
-
-        background-size: 700px ;
-    }
-    
-    .box-five{
-
-        background-size: 850px ;
-    }
-    .box-five:hover{
-
-        background-size: 700px ;
-    }
-    
-    .box-six{
-
-        background-size: 850px ;
-    }
-    .box-six:hover{
-
-        background-size: 700px ;
+@media (max-width: 1120px) {
+    .box-one {
+        background-size: 850px;
     }
 
+    .box-one:hover {
+        background-size: 700px;
+    }
+
+    .box-two {
+        background-size: 850px;
+    }
+
+    .box-two:hover {
+        background-size: 700px;
+    }
+
+    .box-three {
+        background-size: 850px;
+    }
+
+    .box-three:hover {
+        background-size: 700px;
+    }
+
+    .box-four {
+        background-size: 850px;
+    }
+
+    .box-four:hover {
+        background-size: 700px;
+    }
+
+    .box-five {
+        background-size: 850px;
+    }
+
+    .box-five:hover {
+        background-size: 700px;
+    }
+
+    .box-six {
+        background-size: 850px;
+    }
+
+    .box-six:hover {
+        background-size: 700px;
+    }
 }

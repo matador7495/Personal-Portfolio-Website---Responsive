@@ -525,101 +525,40 @@ span {
 }
 
 @media (max-width: 1700px) {
-    .box-one {
-        background-size: 550px;
-    }
 
-    .box-one:hover {
-        background-size: 700px;
-    }
-
-    .box-two {
-        background-size: 550px;
-    }
-
-    .box-two:hover {
-        background-size: 700px;
-    }
-
-    .box-three {
-        background-size: 550px;
-    }
-
-    .box-three:hover {
-        background-size: 700px;
-    }
-
-    .box-four {
-        background-size: 550px;
-    }
-
-    .box-four:hover {
-        background-size: 700px;
-    }
-
-    .box-five {
-        background-size: 550px;
-    }
-
-    .box-five:hover {
-        background-size: 700px;
-    }
-
+    .box-one,
+    .box-two,
+    .box-three,
+    .box-four,
+    .box-five,
     .box-six {
         background-size: 550px;
     }
 
+    .box-one:hover,
+    .box-two:hover,
+    .box-three:hover,
+    .box-four:hover,
+    .box-five:hover,
     .box-six:hover {
         background-size: 700px;
     }
 }
 
 @media (max-width: 1120px) {
-    .box-one {
-        background-size: 850px;
-    }
 
-    .box-one:hover {
-        background-size: 700px;
-    }
-
-    .box-two {
-        background-size: 850px;
-    }
-
-    .box-two:hover {
-        background-size: 700px;
-    }
-
-    .box-three {
-        background-size: 850px;
-    }
-
-    .box-three:hover {
-        background-size: 700px;
-    }
-
-    .box-four {
-        background-size: 850px;
-    }
-
-    .box-four:hover {
-        background-size: 700px;
-    }
-
-    .box-five {
-        background-size: 850px;
-    }
-
-    .box-five:hover {
-        background-size: 700px;
-    }
-
+    .box-one,
+    .box-two,
+    .box-three,
+    .box-four,
+    .box-five,
     .box-six {
         background-size: 850px;
     }
+}
 
-    .box-six:hover {
-        background-size: 700px;
+@media (max-width: 550px) {
+    .row:hover {
+        transform: scale(1.05);
     }
 }

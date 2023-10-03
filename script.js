@@ -1,8 +1,8 @@
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
-menu.addEventListener("click", () => {
-  navlist.classList.toggle("active");
+let menuIcon = document.querySelector("#menu-icon");
+let navList = document.querySelector(".navlist");
+menuIcon.addEventListener("click", () => {
+  navList.classList.toggle("active");
 });
 window.onscroll = () => {
-  navlist.classList.remove("active");
+  navList.classList.remove("active");
 };
